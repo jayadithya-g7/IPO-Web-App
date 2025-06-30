@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Company, IPO, Document, User, Application
+from django.contrib.auth.models import User
 
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,7 +9,7 @@ class CompanySerializer(serializers.ModelSerializer):
 
 
 class IPOSerializer(serializers.ModelSerializer):
-    company = CompanySerializer()  # Nested serializer to create/update the company data
+    company = CompanySerializer()  
 
     class Meta:
         model = IPO
@@ -48,10 +49,17 @@ class DocumentSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+from rest_framework import serializers
+from django.contrib.auth.models import User
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['username', 'password']
+
+    def create(self, validated_data):
+        user = User.objects.create_user(**validated_data)
+        return user
 
 
 class ApplicationSerializer(serializers.ModelSerializer):

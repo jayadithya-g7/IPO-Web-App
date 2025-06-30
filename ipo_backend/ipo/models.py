@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Company(models.Model):
@@ -55,19 +56,21 @@ class Document(models.Model):
         verbose_name = "Document"
         verbose_name_plural = "Documents"
 
-class User(models.Model):
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=255)
-    name = models.CharField(max_length=100, blank=True, null=True)
-    role = models.CharField(max_length=50, blank=True, null=True)
+# class User(models.Model):
+#     email = models.EmailField(unique=True)
+#     username = models.CharField(unique=True, max_length=100)
+#     password = models.CharField(max_length=255)
+#     name = models.CharField(max_length=100, blank=True, null=True)
+#     role = models.CharField(max_length=50, blank=True, null=True)
 
-    def __str__(self):
-        return self.email
+#     def __str__(self):
+#         return self.email
 
-    class Meta:
-        db_table = 'users'
-        verbose_name = "User"
-        verbose_name_plural = "Users"
+#     class Meta:
+#         db_table = 'users'
+#         verbose_name = "User"
+#         verbose_name_plural = "Users"
+
 class Application(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='applications')
     ipo = models.ForeignKey(IPO, on_delete=models.CASCADE, related_name='applications')
