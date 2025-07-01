@@ -80,12 +80,12 @@ This project was developed as part of a professional internship at **Bluestock**
 
 | Role                      | Name                                                    |
 |---------------------------|---------------------------------------------------------|
-| Project Manager           | [Yash Kale](https://github.com/YashKale)                |
+| Project Manager           | Yash Kale                                               |
 | Team Lead & Backend Dev   | [Rabi Narayan Das](https://github.com/rabi-09)          |
-| Co-Team Lead & Backend Dev| [Jayadithya G](https://github.com/jayadithya)           |
-| API and Backend Dev       | [Rahul Mutagekar](https://github.com/rahulm7978)    |
-| Frontend Dev              | [Kevin Andrew A](https://github.com/kevinandrew)        |
-| Frontend Dev              | [Vijesh Prajapat](https://github.com/vijeshprajapat)    |
+| Co-Team Lead & Backend Dev| [Jayadithya G](https://github.com/jayadithya-g7)        |
+| API and Backend Dev       | [Rahul Mutagekar](https://github.com/rahulm7978)        |
+| Frontend Dev              | [Kevin Andrew A](https://github.com/Andrew-Kevin-007)   |
+| Frontend Dev              | Vijesh Prajapat                                         |
 
 ---
 ## 🛠 Setup Instructions
