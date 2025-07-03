@@ -85,7 +85,7 @@ This project was developed as part of a professional internship at **Bluestock**
 | Co-Team Lead & Backend Dev| [Jayadithya G](https://github.com/jayadithya-g7)        |
 | API and Backend Dev       | [Rahul Mutagekar](https://github.com/rahulm7978)        |
 | Frontend Dev              | [Kevin Andrew A](https://github.com/Andrew-Kevin-007)   |
-| Frontend Dev              | Vijesh Prajapat                                         |
+| Frontend Dev              | [Vijesh Prajapat](https://github.com/prajapatvijesh)                                       |
 
 ---
 ## 🛠 Setup Instructions
